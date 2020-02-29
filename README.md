@@ -1,1 +1,2 @@
-# Software-Design-Laboratory
+# Software Design Group05
+Game of War
