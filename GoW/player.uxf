@@ -3,15 +3,22 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>405</x>
-      <y>165</y>
+      <x>90</x>
+      <y>105</y>
       <w>315</w>
-      <h>105</h>
+      <h>255</h>
     </coordinates>
     <panel_attributes>_Player_
 --
-id: Long="36548"
-[waiting for message]</panel_attributes>
+-name: string
+-playPile
+-wonPile
+--
++getName(): string
++collectCard(Card c)
++collectCards(Pile p)
++void useWonPile()
++numCards(): int</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
