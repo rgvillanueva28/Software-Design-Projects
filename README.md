@@ -3,8 +3,10 @@
 # Game of War
 
 ## Instruction:
-After cloning this repository, navigate to the parent directory (cd Software-Design-Projects/)
-
+After cloning this repository, navigate to the parent directory of the project
+```
+cd Software-Design-Projects
+```
 ### To run in terminal:
 ```
 python3 GoW/gameOfWar.py
