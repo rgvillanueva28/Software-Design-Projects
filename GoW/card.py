@@ -24,7 +24,7 @@ class Card:
 			other = Card(ob.__rank, ob.__suit)
 			return self.__rank == other.__rank and self.__suit == other.__suit
 		else:
-			return false
+			return False
 
 	def __str__(self):
 		suitList = ["", "Clubs", "Diamonds", "Hearts", "Spades"]

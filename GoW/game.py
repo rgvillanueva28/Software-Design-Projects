@@ -60,7 +60,7 @@ class Game:
 					print("\nWar! Players put down ")
 					print(num , " cards(s).")
 
-					for m in range(1, num+1):
+					for i in range(1, num+1):
 						c1 = self.__p1.playCard()
 						c2 = self.__p2.playCard()
 
