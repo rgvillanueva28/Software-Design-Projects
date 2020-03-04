@@ -1,31 +1,32 @@
-print("try player")
+from pile import Pile
 
-class Player():
+class Player:
+
     def __init__(self, n):
-        self.name = n
-        self.playPile = new Pile()
-        self.wonPile = new Pile()
+        self.__name = n
+        self.__playPile = Pile()
+        self.__wonPile = Pile()
 
-    Card playCard():
-        if (playPile.getSize() == 0):
-            useWonPile()
-        if (playPile().getSize > 0):
-            return playPile.nextCard()
+    def playCard(self):
+        if(self.__playPile.getSize() == 0):
+            self.useWonPile()
+        if(self.__playPile.getSize() > 0):
+            return self.__playPile.nextCard()
         return None
 
     def getName(self):
-        return self.name
+        return self.__name
 
-    def collectCard(self, Card c):
-        self.wonPile.addCard(c)
+    def collectCard(self, c):
+        self.__wonPile.addCard(c)
 
-    def collectCard(self, Pile p):
-        self.wonPile.addCard(p)
+    def collectCards(self, p):
+        self.__wonPile.addCards(p)
 
     def useWonPile(self):
-        playPile.clear()
-        playPile.addCard(wonPile)
-        wonPile.clear()
+        self.__playPile.clear()
+        self.__playPile.addCards(self.__wonPile)
+        self.__wonPile.clear()
 
-    def numCard(self);
-        return playPile.getSize() + wonPile.getSize()
+    def numCards(self):
+        return self.__playPile.getSize() + self.__wonPile.getSize()

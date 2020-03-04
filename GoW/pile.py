@@ -1,7 +1,6 @@
 #Bob Caridad
 
 class Pile:
-
 	def __init__(self):
 		self.__pile = [None] * 52
 		self.__front = 0
