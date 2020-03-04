@@ -3,7 +3,11 @@
 # Game of War
 
 ## Instruction:
-After cloning this repository, navigate to the parent directory of the project
+Clone this repository
+```
+git clone https://github.com/rgvillanueva28/Software-Design-Projects.git
+```
+then navigate to the parent directory of the project
 ```
 cd Software-Design-Projects
 ```
