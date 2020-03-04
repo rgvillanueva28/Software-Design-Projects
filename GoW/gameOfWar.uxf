@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+  <zoom_level>14</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>70</y>
+      <w>294</w>
+      <h>238</h>
+    </coordinates>
+    <panel_attributes>_Player_
+--
+-name: string
+-playPile: Pile
+-wonPile: Pile
+--
++getName(): string
++collectCard(Card c)
++collectCards(Pile p)
++useWonPile()
++numCards(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>546</y>
+      <w>294</w>
+      <h>308</h>
+    </coordinates>
+    <panel_attributes>_Pile_
+--
+-pile: list
+-front: int
+-end: int
+--
++getSize():int
++clear()
++addCard(Card c)
++addCards(Pile p)
++nextCard(): list</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1022</x>
+      <y>546</y>
+      <w>294</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>Card
+--
+-rank:int
+-suit:int
+--
++Card(rank,suit)
++getRank(): int
++getSuit(): int
++compareTo(object ob): int
++equals(object ob): bool
++toString(): str
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>546</x>
+      <y>70</y>
+      <w>294</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>_Game_
+--
++p1: Player
++p2: Player
+--
+play()
+enoughCards(n): bool
+getWinner(): Player</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1022</x>
+      <y>70</y>
+      <w>294</w>
+      <h>238</h>
+    </coordinates>
+    <panel_attributes>_CardDeck_
+--
+-deck: Card
+-fill()
+-numCard: int
+--
++shuffle()
++deal(): Card
++getSize(): int
+-fill()
+-myRandom(low, high): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>196</x>
+      <y>294</y>
+      <w>42</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>168</y>
+      <w>224</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=2</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>826</x>
+      <y>168</y>
+      <w>224</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1162</x>
+      <y>294</y>
+      <w>56</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=52</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>210</y>
+      <w>378</w>
+      <h>406</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=1</panel_attributes>
+    <additional_attributes>250.0;10.0;250.0;260.0;10.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>644</y>
+      <w>700</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=*</panel_attributes>
+    <additional_attributes>10.0;10.0;480.0;10.0</additional_attributes>
+  </element>
+</diagram>
