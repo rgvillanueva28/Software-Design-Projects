@@ -13,6 +13,8 @@ cd Software-Design-Projects
 ```
 ### To run in terminal:
 ```
+python GoW/gameOfWar.py
+or
 python3 GoW/gameOfWar.py
 ```
 ### To open in VS Code:
